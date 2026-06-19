@@ -1,0 +1,738 @@
+/* --- 2025/2026 Aesthetic Palette Design Core --- */
+:root {
+    --bg-warm-canvas: #D9D6CB;    /* Core warm grey split accent background */
+    --bg-projects-darker: #C2BFB4; /* Custom darker layout background color tone for Projects section */
+    --color-accent: #6528F7;      /* Vivid Purple Focus Theme */
+    --color-dark: #1A1A1A;        /* High-contrast text clarity */
+    --color-darkest-grey: #463a3a; /* Darkest charcoal grey explicitly mapped for the footer block canvas */
+    --color-muted: #555555;       /* Subtext values */
+    --font-headings: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: var(--color-dark);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* --- 1. Navbar Navigation Layout --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    z-index: 9999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    position: relative;
+}
+
+.logo {
+    font-family: var(--font-headings);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.title-sub {
+    color: var(--color-muted);
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-family: var(--font-headings);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-left: 25px;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-accent);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--color-dark);
+    z-index: 10000;
+}
+
+/* --- 2. Asymmetric Split Hero Framework --- */
+.hero-wrapper {
+    min-height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38%;
+    height: 100%;
+    background-color: var(--bg-warm-canvas);
+    z-index: -1;
+}
+
+.hero-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 60px;
+    padding: 40px 20px;
+    align-items: center;
+}
+
+/* Asymmetric Profile ID Card Component */
+.profile-card {
+    background: #FFFFFF;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.avatar-container {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0 auto 25px auto;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-card h2 {
+    font-family: var(--font-headings);
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.divider {
+    width: 50px;
+    height: 2px;
+    background-color: var(--color-accent);
+    margin: 0 auto 15px auto;
+}
+
+.card-sub {
+    font-family: var(--font-headings);
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+    color: var(--color-muted);
+    margin-bottom: 30px;
+}
+
+.card-socials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-top: 1px solid #EEEEEE;
+    padding-top: 20px;
+}
+
+.card-socials a {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-size: 1.4rem;
+    transition: color 0.2s ease;
+}
+
+.card-socials a:hover {
+    color: var(--color-accent);
+}
+
+/* Right Narrative Grid Column */
+.hero-text-content {
+    padding-left: 20px;
+}
+
+.main-heading {
+    font-family: var(--font-headings);
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    display: inline-block;
+    padding-right: 5px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    animation: blinkCursor 0.8s step-end infinite;
+}
+
+.tagline {
+    font-size: 1.4rem;
+    margin-bottom: 35px;
+    font-weight: 500;
+    display: block;
+    width: max-content;
+    max-width: 100%;
+    padding-right: 5px;
+    white-space: nowrap;
+    animation: blinkCursor 0.8s step-end infinite;
+}
+
+@media (max-width: 480px) {
+    .main-heading, .tagline {
+        white-space: normal !important;
+        border-right: none !important;
+        animation: none !important;
+    }
+}
+
+@keyframes blinkCursor {
+    from, to { border-color: transparent }
+    50% { border-color: var(--color-accent); }
+}
+
+.cta-buttons {
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: var(--font-headings);
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-right: 15px;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--color-accent);
+    color: #FFFFFF;
+    border: 1px solid var(--color-accent);
+}
+
+.btn-primary:hover {
+    background-color: #4C11D3;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--color-dark);
+    border: 1px solid var(--color-dark);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-dark);
+    color: #FFFFFF;
+}
+
+.about-paragraphs p {
+    margin-bottom: 20px;
+    color: #333333;
+    font-size: 0.95rem;
+}
+
+/* --- Section Standards --- */
+.section-title {
+    font-family: var(--font-headings);
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+/* --- 4. Technical Skills Section --- */
+.skills-section {
+    background-color: var(--bg-warm-canvas);
+    padding: 80px 20px;
+}
+
+.skills-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background: #FFFFFF;
+    padding: 25px;
+    text-align: center;
+    font-family: var(--font-headings);
+    font-weight: 600;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.skill-card::before, .project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+    transform: skewX(-25deg);
+}
+
+.skill-card:hover::before, .project-card:hover::before {
+    animation: shineEffect 0.75s ease-in-out;
+}
+
+@keyframes shineEffect {
+    100% { left: 200%; }
+}
+
+/* --- 5. Experience & Education Block Timeline --- */
+.experience-section {
+    padding: 80px 20px;
+    background: #FFFFFF;
+}
+
+.timeline-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience-box {
+    border-left: 2px solid var(--color-accent);
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.experience-box:last-child {
+    margin-bottom: 0;
+}
+
+.experience-box::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+}
+
+.timeline-date {
+    font-weight: 600;
+    color: var(--color-accent);
+    font-size: 0.9rem;
+}
+
+.experience-box h3 {
+    font-family: var(--font-headings);
+    margin: 5px 0;
+}
+
+.company-name {
+    color: var(--color-muted);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.exp-details {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.exp-details li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+/* --- 6. Projects Presentation Grid --- */
+.projects-section {
+    padding: 80px 20px;
+    background-color: var(--bg-projects-darker);
+}
+
+.projects-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project-card {
+    background: #FFFFFF;
+    border: 1px solid #B5B2A8;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    border-color: var(--color-accent);
+}
+
+.project-card h3 {
+    font-family: var(--font-headings);
+    margin-bottom: 5px;
+}
+
+.proj-stack {
+    font-size: 0.8rem;
+    color: var(--color-accent);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+}
+
+/* Carousel Dots are completely hidden on desktop layout views */
+.gallery-dots {
+    display: none;
+}
+
+/* --- 7. Contact Alignment Grid & Footer Favicons --- */
+.contact-section {
+    padding: 80px 20px;
+    background: rgba(217, 214, 203, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.contact-info-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    align-items: center;
+}
+
+.contact-item strong {
+    font-family: var(--font-headings);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-socials a {
+    color: var(--color-dark);
+    font-size: 1.3rem;
+    transition: color 0.2s ease;
+}
+
+.footer-socials a:hover {
+    color: var(--color-accent);
+}
+
+/* --- 8. System Footer Metadata --- */
+.footer {
+    background: var(--color-darkest-grey); 
+    color: #FFFFFF; 
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #222222;
+    font-size: 0.85rem;
+}
+
+.footer p { color: #FFFFFF; }
+
+/* --- Media Queries for Tablet & Collapsed Layouts --- */
+@media (max-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .hero-wrapper::before {
+        width: 100%;
+        height: 450px;
+    }
+    .profile-card {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    .hero-text-content {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+/* ==========================================================================
+   MOBILE RESPONSIVE RULES (Max-Width: 768px)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+    
+    .menu-toggle {
+        display: block;
+    }
+
+    .title-sub {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease;
+    }
+
+    .nav-links.active {
+        max-height: 360px;
+        padding: 10px 0;
+        border-top: 1px solid #F5F5F5;
+    }
+
+    .nav-links a {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0 !important;
+        margin: 0 !important;
+        font-size: 0.9rem !important;
+        font-weight: 600;
+        color: var(--color-dark);
+        border-bottom: 1px solid #FAFAFA;
+    }
+
+    .nav-links a:last-child { border-bottom: none; }
+    .nav-links a:hover { background-color: #F9F9F9; color: var(--color-accent); }
+    
+    /* 2. HERO PROFILE REALIGNMENT & CENTER TAGLINE FIX */
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .profile-card {
+        width: 100%;
+        max-width: 320px;
+        margin-bottom: 2.5rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+        border-radius: 16px;
+        padding: 2rem 1.5rem;
+    }
+
+    .hero-text-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Grounding all components precisely in the center */
+    }
+
+    .main-heading {
+        font-size: 2.5rem !important;
+        margin-bottom: 0.5rem;
+        text-align: center;
+        display: block; /* Changes inline status block to let centering auto parameters resolve */
+        padding-right: 0;
+    }
+
+    /* Tagline Moved From Side Alignment into Perfect Center beneath Hello */
+    .tagline {
+        font-size: 1.1rem !important;
+        text-align: center !important;
+        margin: 0 auto 2rem auto !important; /* Perfect auto-centering margins */
+        padding-right: 0 !important;
+        display: inline-block !important;
+        width: auto !important;
+    }
+
+    .about-paragraphs p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        text-align: justify;
+        text-align-last: center;
+        margin-bottom: 1rem;
+        padding: 0 0.5rem;
+    }
+
+    .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .btn {
+        width: 45%;
+        padding: 10px 0;
+        font-size: 0.9rem;
+        margin-right: 0 !important;
+    }
+
+    /* 3. SKILLS GRID TRANSFORM */
+    .skills-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+        padding: 0 1rem;
+    }
+
+    .skill-card {
+        padding: 14px 8px !important;
+        font-size: 0.9rem !important;
+        font-weight: 600;
+        border-radius: 8px;
+    }
+
+    /* 4. EXPERIENCE & TIMELINE SPACING */
+    .experience-section { padding: 3rem 1rem !important; }
+    .experience-box { padding: 1.5rem !important; margin-bottom: 1.5rem !important; border-radius: 12px; }
+    .experience-box h3 { font-size: 1.15rem; }
+    .exp-details { padding-left: 18px !important; }
+    .exp-details li { font-size: 0.9rem !important; margin-bottom: 8px; }
+
+    /* ==========================================================================
+       5. PROJECTS SWIPE GALLERY DESIGN (Matches image_3a95c6 layout parameters)
+       ========================================================================== */
+    .projects-section {
+        padding: 3rem 0rem 2rem 0rem !important; /* Open horizontal bleed space */
+    }
+
+    .projects-section .section-title {
+        padding: 0 1rem;
+        margin-bottom: 30px;
+    }
+
+    /* Outer Wrapper framing the complete app view stack setup */
+    .gallery-wrapper-mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-grid {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 16px;
+        width: 100%;
+        overflow-x: auto !important;
+        scroll-snap-type: x mandatory;
+        padding: 0 24px 20px 24px; /* Matches exact app edge padding alignments */
+        scrollbar-width: none; /* Safely strips default scroll tracks from viewport systems */
+    }
+
+    .projects-grid::-webkit-scrollbar {
+        display: none; /* Complete fallback concealment */
+    }
+
+    /* Custom high-end rounded gallery card container */
+    .project-card {
+        flex: 0 0 calc(100% - 16px) !important; /* Gives cards a clean edge margin overlap */
+        max-width: 340px;
+        scroll-snap-align: center;
+        background: #FFFFFF;
+        border: none !important; /* Minimal card shadow outline drop styles */
+        padding: 24px !important;
+        border-radius: 16px !important; /* Rounded corners match reference snapshot */
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06) !important;
+        white-space: normal;
+        text-align: left;
+    }
+
+    /* Reference Gallery Tracking Dot Container Setup */
+    .gallery-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .gallery-dots .dot {
+        width: 8px;
+        height: 8px;
+        background-color: #B5B2A8; /* Subdued baseline indicator tone */
+        border-radius: 50%;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    /* Bright active indicator matching the focus profile magenta/purple dot spec */
+    .gallery-dots .dot.active {
+        background-color: var(--color-accent); /* Dynamic branding focal color value mapping */
+        transform: scale(1.1);
+    }
+
+    /* 6. CONTACT GRID OPTIMIZATION */
+    .contact-info-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+        text-align: center;
+    }
+}

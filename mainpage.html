@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leena Hayat | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <strong>Leena Hayat</strong> <span class="title-sub">/ FULL STACK DEVELOPER</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle Navigation" onclick="toggleMenu()">☰</button>
+            <nav class="nav-links" id="navLinks">
+                <a href="#hero" onclick="toggleMenu()">ABOUT ME</a>
+                <a href="#skills" onclick="toggleMenu()">SKILLS</a>
+                <a href="#experience" onclick="toggleMenu()">EXPERIENCE & EDUCATION</a>
+                <a href="#projects" onclick="toggleMenu()">PROJECTS</a>
+                <a href="#contact" onclick="toggleMenu()">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="hero-wrapper" id="hero">
+        <div class="hero-container">
+            
+            <div class="profile-card">
+                <div class="avatar-container">
+                    <img src="leenaprofile.jpeg" alt="Leena Hayat" class="profile-img">
+                </div>
+                <h2>Leena Hayat</h2>
+                <div class="divider"></div>
+                <p class="card-sub">FULL STACK DEVELOPER</p>
+                <div class="card-socials">
+                    <a href="https://github.com/leenahayat" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/leena-hayat/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-text-content">
+                <h1 class="main-heading" id="typewriter-title"></h1>
+                <p class="tagline" id="typewriter-sub"></p>
+                
+                <div class="cta-buttons">
+                    <a href="Leena_Hayat_CV_.pdf" target="_blank" class="btn btn-primary">RESUME</a>
+                    <a href="#projects" class="btn btn-secondary">PROJECTS</a>
+                </div>
+
+                <div class="about-paragraphs">
+                    <p>I am a passionate Computer Science student at the Virtual University of Pakistan with a 3.59 CGPA, specialized in building efficient, responsive, and user-friendly web architectures.</p>
+                    <p>Currently accelerating my engineering toolkit as a Full Stack Developer Intern at DecodeLabs, mapping clean backend data storage pipelines to responsive front-end user experiences.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="skills-section" id="skills">
+        <h2 class="section-title">SKILLS</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML5</div>
+            <div class="skill-card">CSS3 / Grid</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">C++</div>
+            <div class="skill-card">MongoDB</div>
+        </div>
+    </section>
+
+    <section class="experience-section" id="experience">
+        <h2 class="section-title">EXPERIENCE & EDUCATION</h2>
+        <div class="timeline-container">
+            
+            <div class="experience-box">
+                <span class="timeline-date">15 June 2026 – 15 July 2026</span>
+                <h3>Full Stack Developer Intern</h3>
+                <h4 class="company-name">DecodeLabs</h4>
+                <ul class="exp-details">
+                    <li>Engineering highly responsive, framework-free web systems using semantic HTML5 layouts, advanced CSS Grid architectures, and vanilla component logic.</li>
+                    <li>Iterating over modern interactive layouts through accessibility standards and graceful mobile-first degradation rules.</li>
+                </ul>
+            </div>
+
+            <div class="experience-box">
+                <span class="timeline-date">2023 – 2027 (Present)</span>
+                <h3>BS Computer Science (6th Semester)</h3>
+                <h4 class="company-name">Virtual University of Pakistan</h4>
+                <ul class="exp-details">
+                    <li>Maintaining an academic track record with an official cumulative grade point average of <strong>3.51 CGPA</strong>.</li>
+                    <li>Specializing in web engineering layout paradigms, full-stack object architectural workflows, and clean code optimization.</li>
+                </ul>
+            </div>
+
+            <div class="experience-box">
+                <span class="timeline-date">2021 – 2023</span>
+                <h3>Intermediate in Computer Science (I.C.S)</h3>
+                <h4 class="company-name">Army Public School and College System</h4>
+                <p style="font-size: 0.95rem; margin-top: 8px; color: #333333; padding-left: 20px;">
+                    Built strong fundamental core values in computational logic patterns, mathematics frameworks, and algorithmic systems.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <h2 class="section-title">PROJECTS</h2>
+        
+        <div class="gallery-wrapper-mobile">
+            <div class="projects-grid" id="projectGrid">
+                
+                <a href="https://github.com/leenahayat" target="_blank" class="project-card">
+                    <h3>LevelUpCuties</h3>
+                    <p class="proj-stack">MERN Stack, Railway</p>
+                    <p>Full-stack digital sanctuary featuring self-development media galleries, custom habit-tracking mechanics, and cloud-hosted session storage via MongoDB Atlas.</p>
+                </a>
+
+                <a href="https://github.com/leenahayat" target="_blank" class="project-card">
+                    <h3>Dance Academy Website</h3>
+                    <p class="proj-stack">Node.js, Express, MongoDB</p>
+                    <p>Dynamic web portal tracking client registration details using custom animations and server-side templates.</p>
+                </a>
+
+                <a href="https://github.com/leenahayat" target="_blank" class="project-card">
+                    <h3>Student Management System</h3>
+                    <p class="proj-stack">Python</p>
+                    <p>Terminal automation system running interactive CRUD algorithms for database tracking records.</p>
+                </a>
+
+                <a href="https://github.com/leenahayat" target="_blank" class="project-card">
+                    <h3>Calendar Generator</h3>
+                    <p class="proj-stack">Python</p>
+                    <p>Lightweight terminal utility leveraging built-in libraries to programmatically format and render custom yearly grid layouts.</p>
+                </a>
+
+            </div>
+
+            <div class="gallery-dots" id="galleryDots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2 class="section-title">CONTACT</h2>
+        <div class="contact-info-grid">
+            <div class="contact-item">
+                <strong>Call</strong>
+                <p>+92 00000000</p>
+            </div>
+            <div class="contact-item">
+                <strong>Write</strong>
+                <p>leenahayat14@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <strong>Follow</strong>
+                <div class="footer-socials">
+                    <a href="https://github.com/leenahayat" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/leena-hayat/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Leena Hayat. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Navbar toggle control
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            const toggleBtn = document.querySelector('.menu-toggle');
+            
+            if(window.innerWidth <= 768) {
+                navLinks.classList.toggle('active');
+                toggleBtn.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+            }
+        }
+
+        // Asynchronous Typewriter Animation Engine
+        const titleText = "Hello";
+        const subText = "Here's who I am & what I do";
+        
+        let titleIndex = 0;
+        let subIndex = 0;
+        
+        const titleElement = document.getElementById("typewriter-title");
+        const subElement = document.getElementById("typewriter-sub");
+
+        function typeTitle() {
+            if (titleIndex < titleText.length) {
+                titleElement.innerHTML += titleText.charAt(titleIndex);
+                titleIndex++;
+                setTimeout(typeTitle, 120); // Speed of "Hello" typing
+            } else {
+                titleElement.style.borderRight = "none";
+                setTimeout(typeSub, 400);
+            }
+        }
+
+        function typeSub() {
+            subElement.style.borderRight = "3px solid var(--color-accent)";
+            
+            if (subIndex < subText.length) {
+                subElement.innerHTML += subText.charAt(subIndex);
+                subIndex++;
+                setTimeout(typeSub, 60); // Speed of tagline typing
+            }
+        }
+
+        // Mobile Gallery Carousel Navigation Dots Dynamic Sync Tracker
+        const projectGrid = document.getElementById('projectGrid');
+        const dots = document.querySelectorAll('.gallery-dots .dot');
+
+        if (projectGrid && dots.length > 0) {
+            projectGrid.addEventListener('scroll', () => {
+                const scrollLeft = projectGrid.scrollLeft;
+                const cardWidth = projectGrid.querySelector('.project-card').clientWidth + 16; // Include structural card gap
+                const activeIndex = Math.round(scrollLeft / cardWidth);
+                
+                dots.forEach((dot, index) => {
+                    if (index === activeIndex) {
+                        dot.classList.add('active');
+                    } else {
+                        dot.classList.remove('active');
+                    }
+                });
+            });
+        }
+
+        // Initialize script on document load
+        window.addEventListener("DOMContentLoaded", () => {
+            titleElement.style.borderRight = "3px solid var(--color-accent)";
+            setTimeout(typeTitle, 500);
+        });
+    </script>
+</body>
+</html>
