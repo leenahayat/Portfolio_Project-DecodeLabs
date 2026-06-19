@@ -1,11 +1,11 @@
-/* --- 2025/2026 Aesthetic Palette Design Core --- */
+
 :root {
-    --bg-warm-canvas: #D9D6CB;    /* Core warm grey split accent background */
-    --bg-projects-darker: #C2BFB4; /* Custom darker layout background color tone for Projects section */
-    --color-accent: #6528F7;      /* Vivid Purple Focus Theme */
-    --color-dark: #1A1A1A;        /* High-contrast text clarity */
-    --color-darkest-grey: #463a3a; /* Darkest charcoal grey explicitly mapped for the footer block canvas */
-    --color-muted: #555555;       /* Subtext values */
+    --bg-warm-canvas: #D9D6CB;    
+    --bg-projects-darker: #C2BFB4; 
+    --color-accent: #6528F7;      
+    --color-dark: #1A1A1A;        
+    --color-darkest-grey: #463a3a; 
+    --color-muted: #555555;      
     --font-headings: 'Montserrat', sans-serif;
     --font-body: 'Open Sans', sans-serif;
 }
@@ -28,7 +28,7 @@ body {
     overflow-x: hidden;
 }
 
-/* --- 1. Navbar Navigation Layout --- */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -91,7 +91,7 @@ body {
     z-index: 10000;
 }
 
-/* --- 2. Asymmetric Split Hero Framework --- */
+
 .hero-wrapper {
     min-height: 100vh;
     padding-top: 100px;
@@ -122,7 +122,7 @@ body {
     align-items: center;
 }
 
-/* Asymmetric Profile ID Card Component */
+
 .profile-card {
     background: #FFFFFF;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
@@ -281,7 +281,7 @@ body {
     position: relative;
 }
 
-/* --- 4. Technical Skills Section --- */
+
 .skills-section {
     background-color: var(--bg-warm-canvas);
     padding: 80px 20px;
@@ -332,7 +332,7 @@ body {
     100% { left: 200%; }
 }
 
-/* --- 5. Experience & Education Block Timeline --- */
+
 .experience-section {
     padding: 80px 20px;
     background: #FFFFFF;
@@ -392,7 +392,7 @@ body {
     font-size: 0.95rem;
 }
 
-/* --- 6. Projects Presentation Grid --- */
+
 .projects-section {
     padding: 80px 20px;
     background-color: var(--bg-projects-darker);
@@ -442,12 +442,11 @@ body {
     font-size: 0.95rem;
 }
 
-/* Carousel Dots are completely hidden on desktop layout views */
+
 .gallery-dots {
     display: none;
 }
 
-/* --- 7. Contact Alignment Grid & Footer Favicons --- */
 .contact-section {
     padding: 80px 20px;
     background: rgba(217, 214, 203, 0.75);
@@ -487,7 +486,7 @@ body {
     color: var(--color-accent);
 }
 
-/* --- 8. System Footer Metadata --- */
+
 .footer {
     background: var(--color-darkest-grey); 
     color: #FFFFFF; 
@@ -499,7 +498,7 @@ body {
 
 .footer p { color: #FFFFFF; }
 
-/* --- Media Queries for Tablet & Collapsed Layouts --- */
+
 @media (max-width: 1024px) {
     .hero-container {
         grid-template-columns: 1fr;
@@ -519,9 +518,6 @@ body {
     }
 }
 
-/* ==========================================================================
-   MOBILE RESPONSIVE RULES (Max-Width: 768px)
-   ========================================================================== */
 @media screen and (max-width: 768px) {
     
     .menu-toggle {
@@ -567,7 +563,7 @@ body {
     .nav-links a:last-child { border-bottom: none; }
     .nav-links a:hover { background-color: #F9F9F9; color: var(--color-accent); }
     
-    /* 2. HERO PROFILE REALIGNMENT & CENTER TAGLINE FIX */
+ 
     .hero-container {
         display: flex;
         flex-direction: column;
@@ -589,22 +585,22 @@ body {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center; /* Grounding all components precisely in the center */
+        align-items: center; 
     }
 
     .main-heading {
         font-size: 2.5rem !important;
         margin-bottom: 0.5rem;
         text-align: center;
-        display: block; /* Changes inline status block to let centering auto parameters resolve */
+        display: block; 
         padding-right: 0;
     }
 
-    /* Tagline Moved From Side Alignment into Perfect Center beneath Hello */
+
     .tagline {
         font-size: 1.1rem !important;
         text-align: center !important;
-        margin: 0 auto 2rem auto !important; /* Perfect auto-centering margins */
+        margin: 0 auto 2rem auto !important; 
         padding-right: 0 !important;
         display: inline-block !important;
         width: auto !important;
@@ -634,7 +630,7 @@ body {
         margin-right: 0 !important;
     }
 
-    /* 3. SKILLS GRID TRANSFORM */
+ 
     .skills-grid {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important;
@@ -649,18 +645,14 @@ body {
         border-radius: 8px;
     }
 
-    /* 4. EXPERIENCE & TIMELINE SPACING */
     .experience-section { padding: 3rem 1rem !important; }
     .experience-box { padding: 1.5rem !important; margin-bottom: 1.5rem !important; border-radius: 12px; }
     .experience-box h3 { font-size: 1.15rem; }
     .exp-details { padding-left: 18px !important; }
     .exp-details li { font-size: 0.9rem !important; margin-bottom: 8px; }
 
-    /* ==========================================================================
-       5. PROJECTS SWIPE GALLERY DESIGN (Matches image_3a95c6 layout parameters)
-       ========================================================================== */
     .projects-section {
-        padding: 3rem 0rem 2rem 0rem !important; /* Open horizontal bleed space */
+        padding: 3rem 0rem 2rem 0rem !important; 
     }
 
     .projects-section .section-title {
@@ -668,7 +660,6 @@ body {
         margin-bottom: 30px;
     }
 
-    /* Outer Wrapper framing the complete app view stack setup */
     .gallery-wrapper-mobile {
         width: 100%;
         display: flex;
@@ -683,29 +674,29 @@ body {
         width: 100%;
         overflow-x: auto !important;
         scroll-snap-type: x mandatory;
-        padding: 0 24px 20px 24px; /* Matches exact app edge padding alignments */
-        scrollbar-width: none; /* Safely strips default scroll tracks from viewport systems */
+        padding: 0 24px 20px 24px;
+        scrollbar-width: none; 
     }
 
     .projects-grid::-webkit-scrollbar {
-        display: none; /* Complete fallback concealment */
+        display: none;
     }
 
-    /* Custom high-end rounded gallery card container */
+
     .project-card {
-        flex: 0 0 calc(100% - 16px) !important; /* Gives cards a clean edge margin overlap */
+        flex: 0 0 calc(100% - 16px) !important; 
         max-width: 340px;
         scroll-snap-align: center;
         background: #FFFFFF;
-        border: none !important; /* Minimal card shadow outline drop styles */
+        border: none !important; 
         padding: 24px !important;
-        border-radius: 16px !important; /* Rounded corners match reference snapshot */
+        border-radius: 16px !important; 
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06) !important;
         white-space: normal;
         text-align: left;
     }
 
-    /* Reference Gallery Tracking Dot Container Setup */
+
     .gallery-dots {
         display: flex;
         justify-content: center;
@@ -718,18 +709,18 @@ body {
     .gallery-dots .dot {
         width: 8px;
         height: 8px;
-        background-color: #B5B2A8; /* Subdued baseline indicator tone */
+        background-color: #B5B2A8;
         border-radius: 50%;
         transition: background-color 0.2s ease, transform 0.2s ease;
     }
 
-    /* Bright active indicator matching the focus profile magenta/purple dot spec */
+
     .gallery-dots .dot.active {
-        background-color: var(--color-accent); /* Dynamic branding focal color value mapping */
+        background-color: var(--color-accent);
         transform: scale(1.1);
     }
 
-    /* 6. CONTACT GRID OPTIMIZATION */
+
     .contact-info-grid {
         grid-template-columns: 1fr !important;
         gap: 1.5rem !important;
