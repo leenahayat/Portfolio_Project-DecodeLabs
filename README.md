@@ -9,10 +9,10 @@ A high-fidelity, single-page professional software engineering portfolio designe
 Explore the interface behavior, layout responsiveness, and custom interactive modules across different device viewports:
 
 ### 🖥️ Desktop View Walkthrough
-<video src="Desktopview.webm" controls width="100%"></video>
+<video src="Desktopview.mp4" controls width="100%"></video>
 
 ### 📱 Mobile View Walkthrough
-<video src="Mobileview.webm" controls width="100%"></video>
+<video src="Mobileview.mp4" controls width="100%"></video>
 
 ---
 
