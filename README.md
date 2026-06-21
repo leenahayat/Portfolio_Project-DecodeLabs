@@ -8,9 +8,20 @@ A high-fidelity, single-page professional software engineering portfolio designe
 
 Explore the interface behavior, layout responsiveness, and custom interactive modules across different device viewports:
 
-| 🖥️ Desktop View Walkthrough | 📱 Mobile View Walkthrough |
-| :---: | :---: |
-| <video src="Desktopview.webm" controls width="100%">Your browser does not support the video tag.</video> | <video src="Mobileview.webm" controls width="100%">Your browser does not support the video tag.</video> |
+<table>
+  <tr>
+    <th align="center">🖥️ Desktop View Walkthrough</th>
+    <th align="center">📱 Mobile View Walkthrough</th>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <video src="https://github.com/leenahayat/Portfolio_Project-DecodeLabs/blob/main/Desktopview.webm?raw=true" controls width="100%"></video>
+    </td>
+    <td width="50%" valign="top">
+      <video src="https://github.com/leenahayat/Portfolio_Project-DecodeLabs/blob/main/Mobileview.webm?raw=true" controls width="100%"></video>
+    </td>
+  </tr>
+</table>
 
 ---
 
