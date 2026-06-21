@@ -6,22 +6,9 @@ A high-fidelity, single-page professional software engineering portfolio designe
 
 ## 📽️ Interface Walkthrough & System Demos
 
-Explore the interface behavior, layout responsiveness, and custom interactive modules across different device viewports:
+Explore the interface behavior, layout responsiveness, and custom interactive modules across different device viewports. 
 
-<table>
-  <tr>
-    <th align="center">🖥️ Desktop View Walkthrough</th>
-    <th align="center">📱 Mobile View Walkthrough</th>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <video src="https://github.com/leenahayat/Portfolio_Project-DecodeLabs/blob/main/Desktopview.webm?raw=true" controls width="100%"></video>
-    </td>
-    <td width="50%" valign="top">
-      <video src="https://github.com/leenahayat/Portfolio_Project-DecodeLabs/blob/main/Mobileview.webm?raw=true" controls width="100%"></video>
-    </td>
-  </tr>
-</table>
+*(Delete this line and drag/drop your "Desktopview.webm" and "Mobileview.webm" files from your PC right here to generate the streaming links!)*
 
 ---
 
