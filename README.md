@@ -6,11 +6,13 @@ A high-fidelity, single-page professional software engineering portfolio designe
 
 ## 📽️ Interface Walkthrough & System Demos
 
-Explore the interface behavior, layout responsiveness, and custom interactive modules across different device viewports. 
+Explore the interface behavior, layout responsiveness, and custom interactive modules across different device viewports:
 
-[Mobileview.webm](https://github.com/user-attachments/assets/a744486e-595a-4a2b-b125-d324348cbbfd)
-[Desktopview.webm](https://github.com/user-attachments/assets/efc81168-4bf5-4bb1-a4df-5feaa6194561)
+### 🖥️ Desktop View Walkthrough
+<video src="Desktopview.webm" controls width="100%"></video>
 
+### 📱 Mobile View Walkthrough
+<video src="Mobileview.webm" controls width="100%"></video>
 
 ---
 
