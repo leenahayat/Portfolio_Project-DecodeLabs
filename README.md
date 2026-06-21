@@ -2,18 +2,15 @@
 
 A high-fidelity, single-page professional software engineering portfolio designed with an asymmetric split-column framework and premium light-ambient tones (`#D9D6CB`). This application represents **Project 1** built during my Full Stack Developer Internship at **DecodeLabs**, developed completely with raw web standards to deliver maximum performance, crisp typography transitions, and a customized touch-swipe carousel engine for mobile viewports.
 
-![Portfolio Desktop Layout Preview](https://raw.githubusercontent.com/leenahayat/portfolio/main/preview.png)
-
 ---
 
-## 📽️ System Walkthrough & Tutorial Video
+## 📽️ Interface Walkthrough & System Demos
 
-Watch the comprehensive walkthrough showcasing the architectural construction of this application, the responsiveness grid engine, and a complete code walkthrough for this DecodeLabs assignment:
+Explore the interface behavior, layout responsiveness, and custom interactive modules across different device viewports:
 
-<video src="Desktopview.webm" controls width="100%" poster="https://raw.githubusercontent.com/leenahayat/portfolio/main/preview.png">
-  Your browser does not support the video tag.
-</video>
-
+| 🖥️ Desktop View Walkthrough | 📱 Mobile View Walkthrough |
+| :---: | :---: |
+| <video src="Desktopview.webm" controls width="100%">Your browser does not support the video tag.</video> | <video src="Mobileview.webm" controls width="100%">Your browser does not support the video tag.</video> |
 
 ---
 
@@ -53,11 +50,15 @@ On desktop screens, projects display as a standard layout grid. On mobile viewpo
 
 ## 📂 Repository Tree Structure
 
+Based on the active snapshot of this repository, the project workspace is configured as follows:
+
 ```text
-portfolio-root/
+Portfolio_Project-DecodeLabs/
 │
-├── index.html         # Application layout file, typography frameworks, & JS animation logic
-├── style.css          # Central color palette variables, grid tokens, and media query overrides
-├── leenaprofile.jpeg  # Core profile avatar image asset
-├── YOUR_VIDEO_NAME.webm # Project 1 video walkthrough from PC
-└── README.md          # Project system documentation (This file)
+├── mainpage.html        # Main application layout, typography frameworks, & JS animation logic
+├── style.css            # Central color palette variables, layout grids, and mobile breakpoints
+├── leenaprofile.jpeg    # Core profile avatar image asset
+├── Leena_Hayat_CV_.pdf  # Professional verified resume attachment
+├── Desktopview.webm     # High-definition desktop interface demonstration video
+├── Mobileview.webm      # Fluid mobile layout swipe gallery demonstration video
+└── README.md            # System overview and operational documentation (This file)
