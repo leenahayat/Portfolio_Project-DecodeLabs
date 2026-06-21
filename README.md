@@ -6,9 +6,14 @@ A high-fidelity, single-page professional software engineering portfolio designe
 
 ## 📽️ Interface Walkthrough & System Demos
 
-Explore the interface behavior, layout responsiveness, and custom interactive modules across different device viewports:
-https://github.com/leenahayat/Portfolio_Project-DecodeLabs/blob/main/Desktopview.mp4
-https://github.com/leenahayat/Portfolio_Project-DecodeLabs/blob/main/Desktopview.webm
+Explore the interface behavior, layout responsiveness, and custom interactive modules across different device viewports. 
+
+
+https://github.com/user-attachments/assets/c4bb0437-59d9-4ea6-a1b6-045edb938541
+
+https://github.com/user-attachments/assets/b16865c7-0163-46a8-b10d-dcc17f4a436c
+
+
 
 ---
 
@@ -51,7 +56,7 @@ On desktop screens, projects display as a standard layout grid. On mobile viewpo
 Based on the active snapshot of this repository, the project workspace is configured as follows:
 
 ```text
-Portfolio/
+Portfolio_Project-DecodeLabs/
 │
 ├── mainpage.html        # Main application layout, typography frameworks, & JS animation logic
 ├── style.css            # Central color palette variables, layout grids, and mobile breakpoints
