@@ -50,18 +50,3 @@ A custom timeline track bordered by an absolute vertical line. It charts profess
 On desktop screens, projects display as a standard layout grid. On mobile viewports, an advanced CSS media query transforms the layout into a horizontal swipe gallery (`scroll-snap-type: x mandatory`) coupled with an active JavaScript listener that actively highlights tracking dots as you swipe.
 
 ---
-
-## 📂 Repository Tree Structure
-
-Based on the active snapshot of this repository, the project workspace is configured as follows:
-
-```text
-Portfolio_Project-DecodeLabs/
-│
-├── mainpage.html        # Main application layout, typography frameworks, & JS animation logic
-├── style.css            # Central color palette variables, layout grids, and mobile breakpoints
-├── leenaprofile.jpeg    # Core profile avatar image asset
-├── Leena_Hayat_CV_.pdf  # Professional verified resume attachment
-├── Desktopview.webm     # High-definition desktop interface demonstration video
-├── Mobileview.webm      # Fluid mobile layout swipe gallery demonstration video
-└── README.md            # System overview and operational documentation (This file)
